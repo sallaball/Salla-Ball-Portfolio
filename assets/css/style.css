@@ -1,0 +1,135 @@
+:root {
+    --text-color: rgba(17, 37, 37);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    font-weight: lighter;
+}
+
+/* header start */
+
+header {
+    background-image: url(../images/header-bg.jpg);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    text-shadow: 0 0 10px rgba(17, 37, 37, 0.8);
+    font-size: 30px;
+    padding: 15px;
+    border-bottom: 3px solid rgba(17, 37, 37, 0.8);
+}
+
+header h1 {
+    color: rgb(17, 37, 37);
+    padding: 15px;
+    font-weight: bold;
+    background-color: rgb(184, 192, 204);
+    border-radius: 10px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+
+header nav ul li {
+    padding: 20px 30px;
+    margin-top: 15px;
+    font-size: 25px;
+    color:var(--text-color);
+}
+
+header nav ul li:hover {
+    font-weight: bold;
+    font-size: 27px;
+    background-color: rgb(184, 192, 204);
+    border-radius: 5px;
+}
+
+/* header end */
+
+/* about section */
+
+.about {
+    padding: 50px;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.about h2 {
+    font-size: 40px;
+    border-bottom: 3px solid var(--text-color);
+    padding: 50px auto 20px auto;
+    text-align: center;
+}
+
+.about p {
+    padding-top: 20px;
+}
+
+
+/* about section end */
+
+/* work */
+/* end work */
+
+/* footer */
+
+footer {
+    background-image: url(../images/header-bg.jpg);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-shadow: 0 0 10px rgba(17, 37, 37, 0.8);
+    font-size: 25px;
+    padding: 15px;
+    border-bottom: 3px solid rgba(17, 37, 37, 0.8);
+}
+
+footer h4 {
+    background-color:rgb(184, 192, 204);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+footer div {
+    font-size: 20px;
+    padding: 8px 25px;
+    font-weight: bold;
+}
+
+.phone:hover {
+    background-color:rgb(184, 192, 204);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.email:hover {
+    font-size: 23px;
+    background-color: rgb(184, 192, 204);
+    border-radius: 5px;
+}
+
+.linkedin:hover {
+    font-size: 23px;
+    background-color: rgb(184, 192, 204);
+    border-radius: 5px;
+}
+
+/* end footer */
