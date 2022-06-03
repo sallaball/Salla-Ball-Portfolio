@@ -52,7 +52,7 @@ header nav ul li {
     padding: 20px 30px;
     margin-top: 15px;
     font-size: 25px;
-    color:var(--text-color);
+    color: var(--text-color);
 }
 
 header nav ul li:hover {
@@ -70,6 +70,7 @@ header nav ul li:hover {
     padding: 50px;
     display: block;
     flex-wrap: wrap;
+    background-color:rgb(184, 192, 204);
 }
 
 .about h2 {
@@ -77,16 +78,35 @@ header nav ul li:hover {
     border-bottom: 3px solid var(--text-color);
     padding: 50px auto 20px auto;
     text-align: center;
+    text-shadow: 0 0 10px rgba(17, 37, 37, 0.8);
 }
 
 .about p {
     padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--text-color);
+    font-size: 20px;
 }
 
 
 /* about section end */
 
 /* work */
+
+.work {
+    display: flex;
+    margin-top: 0;
+}
+
+
+.work h2 {
+    padding: 50px 20px 50px 200px;
+    font-size: 35px;
+    border-right: 3px solid var(--text-color);
+    background-color:rgb(184, 192, 204);
+    text-shadow: 0 0 10px rgba(17, 37, 37, 0.8);
+}
+
 /* end work */
 
 /* footer */
