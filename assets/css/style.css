@@ -111,6 +111,7 @@ header nav ul li:hover {
 
 .first-website {
     opacity: 0.8;
+    margin-bottom: 10px;
 }
 
 .websites h3 {
@@ -132,7 +133,7 @@ header nav ul li:hover {
     transition: background-size 0.2s;
     display: flex;
     width: 1000px;
-    height: 350px;
+    height: 370px;
     text-decoration: none;
     cursor: pointer;
     overflow: hidden;
@@ -169,10 +170,79 @@ header nav ul li:hover {
     opacity: 1;
 }
 
+.picture3 {
+    background-image: url(../images/placeholder-bg.jpg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    display: flex;
+    width: 500px;
+    height: 250px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    border: 3px solid rgba(17, 37, 37, 0.8);
+}
+
+.picture4 {
+    background-image: url(../images/placeholder-bg.jpg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    display: flex;
+    width: 500px;
+    height: 250px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    border: 3px solid rgba(17, 37, 37, 0.8);
+}
+
+.picture5 {
+    background-image: url(../images/placeholder-bg.jpg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    display: flex;
+    width: 500px;
+    height: 250px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    border: 3px solid rgba(17, 37, 37, 0.8);
+}
+
+.picture6 {
+    background-image: url(../images/placeholder-bg.jpg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    display: flex;
+    width: 500px;
+    height: 250px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    border: 3px solid rgba(17, 37, 37, 0.8);
+}
+
 .website {
-    padding: 100px 100px 20px 15px;
+    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
+    margin: 10px 10px 10px 0;
 }
 
 .second-website {
@@ -181,7 +251,7 @@ header nav ul li:hover {
 }
 
 .third-website {
-    background-image: url(../images/placeholder-bg.jpg);
+    opacity: 0.8;
 }
 
 .fourth-website {
