@@ -165,7 +165,7 @@ header nav ul li:hover {
     opacity: 1;
 }
 
-.picture2:hover, .placeholder:hover {
+.picture2:hover, .picture3:hover, .picture4:hover, .picture5:hover, .picture6:hover {
     background-size: 550px;
     opacity: 1;
 }
@@ -239,7 +239,6 @@ header nav ul li:hover {
 }
 
 .website {
-    justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
     margin: 10px 10px 10px 0;
@@ -247,7 +246,6 @@ header nav ul li:hover {
 
 .second-website {
     opacity: 0.8;
-    flex: 30%;
 }
 
 .third-website {
