@@ -32,8 +32,9 @@ header h1 {
     color: rgb(17, 37, 37);
     padding: 15px;
     font-weight: bold;
-    background-color: rgb(184, 192, 204);
+    background-color: rgb(213, 214, 218);
     border-radius: 10px;
+    font-style: oblique;
 }
 
 header a {
@@ -58,7 +59,7 @@ header nav ul li {
 header nav ul li:hover {
     font-weight: bold;
     font-size: 27px;
-    background-color: rgb(184, 192, 204);
+    background-color: rgb(213, 214, 218);
     border-radius: 5px;
 }
 
@@ -70,7 +71,7 @@ header nav ul li:hover {
     padding: 50px;
     display: block;
     flex-wrap: wrap;
-    background-color:rgb(184, 192, 204);
+    background-color:rgb(213, 214, 218);
 }
 
 .about h2 {
@@ -96,6 +97,7 @@ header nav ul li:hover {
 .work {
     display: flex;
     margin-top: 0;
+    background-color: rgb(213, 214, 218);
 }
 
 
@@ -103,9 +105,39 @@ header nav ul li:hover {
     padding: 50px 20px 50px 200px;
     font-size: 35px;
     border-right: 3px solid var(--text-color);
-    background-color:rgb(184, 192, 204);
+    background-color:rgb(213, 214, 218);
     text-shadow: 0 0 10px rgba(17, 37, 37, 0.8);
 }
+
+.website-name {
+    padding: 15px;
+    background-color:rgb(213, 214, 218);
+    border-radius: 5px;
+    border: 2px solid rgba(17, 37, 37, 0.8);
+    margin-left: 5px;
+}
+
+.websites {
+    margin: 0 15px 15px 15px;
+}
+
+.website {
+    position: flex;
+    flex-wrap: wrap;
+    padding: 100px 75px 20px 15px;
+    border: 3px solid rgba(17, 37, 37, 0.8);
+    margin-bottom: 15px;
+}
+
+.first-website {
+    padding: 250px 800px 20px 15px;
+    position: flex;
+    flex-wrap: wrap;
+    border: 3px solid rgba(17, 37, 37, 0.8);
+    margin-bottom: 15px;
+}
+
+
 
 /* end work */
 
