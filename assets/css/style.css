@@ -103,40 +103,104 @@ header nav ul li:hover {
 
 .work h2 {
     padding: 50px 20px 50px 200px;
-    font-size: 35px;
+    font-size: 50px;
     border-right: 3px solid var(--text-color);
     background-color:rgb(213, 214, 218);
     text-shadow: 0 0 10px rgba(17, 37, 37, 0.8);
 }
 
-.website-name {
-    padding: 15px;
-    background-color:rgb(213, 214, 218);
-    border-radius: 5px;
-    border: 2px solid rgba(17, 37, 37, 0.8);
-    margin-left: 5px;
+.first-website {
+    opacity: 0.8;
+}
+
+.websites h3 {
+    font-size: 15px;
+    padding: 5px;
+    background-color:rgb(184, 192, 204);
+}
+
+.websites h3 p {
+    font-size: 13px;
+}
+
+.picture1 {
+    background-image: url(../images/run-buddy-screenshot.png);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    display: flex;
+    width: 1000px;
+    height: 350px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    border: 3px solid rgba(17, 37, 37, 0.8);
+}
+
+.picture2 {
+    background-image: url(../images/horiseon-screenshot.png);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    display: flex;
+    width: 500px;
+    height: 250px;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    border: 3px solid rgba(17, 37, 37, 0.8);
+}
+
+
+.picture1:hover {
+    background-size: 1100px;
+    opacity: 1;
+}
+
+.picture2:hover, .placeholder:hover {
+    background-size: 550px;
+    opacity: 1;
+}
+
+.website {
+    padding: 100px 100px 20px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second-website {
+    opacity: 0.8;
+    flex: 30%;
+}
+
+.third-website {
+    background-image: url(../images/placeholder-bg.jpg);
+}
+
+.fourth-website {
+    background-image: url(../images/placeholder-bg.jpg);
+}
+
+.fifth-website {
+    background-image: url(../images/placeholder-bg.jpg);
+}
+
+.sixth-website {
+    background-image: url(../images/placeholder-bg.jpg);
 }
 
 .websites {
     margin: 0 15px 15px 15px;
-}
-
-.website {
-    position: flex;
+    display: flex;
     flex-wrap: wrap;
-    padding: 100px 75px 20px 15px;
-    border: 3px solid rgba(17, 37, 37, 0.8);
-    margin-bottom: 15px;
 }
-
-.first-website {
-    padding: 250px 800px 20px 15px;
-    position: flex;
-    flex-wrap: wrap;
-    border: 3px solid rgba(17, 37, 37, 0.8);
-    margin-bottom: 15px;
-}
-
 
 
 /* end work */
@@ -152,6 +216,7 @@ footer {
     font-size: 25px;
     padding: 15px;
     border-bottom: 3px solid rgba(17, 37, 37, 0.8);
+    border-top: 3px solid rgba(17, 37, 37, 0.8);
 }
 
 footer h4 {
