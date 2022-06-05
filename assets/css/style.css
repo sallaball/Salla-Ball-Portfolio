@@ -30,16 +30,14 @@ header {
 
 header h1 {
     color: rgb(17, 37, 37);
-    padding: 15px;
+    padding: 15px 50px 15px 15px;
     font-weight: bold;
     background-color: rgb(213, 214, 218);
     border-radius: 10px;
     font-style: oblique;
+    flex-wrap: nowrap;
 }
 
-.self {
-    align-items: left;
-}
 
 header a {
     text-decoration: none;
@@ -133,7 +131,6 @@ header nav ul li:hover {
     background-image: url(../images/run-buddy-screenshot.png);
     background-size: 1000px;
     background-repeat: no-repeat;
-    background-position: center;
     background-clip: border-box;
     transition: background-size 0.2s;
     display: flex;
@@ -249,30 +246,12 @@ header nav ul li:hover {
     margin: 10px 10px 10px 0;
 }
 
-.second-website {
-    opacity: 0.8;
-}
-
-.third-website {
-    opacity: 0.8;
-}
-
-.fourth-website {
-    background-image: url(../images/placeholder-bg.jpg);
-}
-
-.fifth-website {
-    background-image: url(../images/placeholder-bg.jpg);
-}
-
-.sixth-website {
-    background-image: url(../images/placeholder-bg.jpg);
-}
 
 .websites {
     margin: 0 15px 15px 15px;
     display: flex;
     flex-wrap: wrap;
+    opacity: 0.8;
 }
 
 
@@ -304,22 +283,59 @@ footer div {
     font-weight: bold;
 }
 
-.phone:hover {
+.phone:hover, .email:hover, .linkedin:hover {
     background-color:rgb(184, 192, 204);
     border-radius: 5px;
     padding: 10px;
-}
-
-.email:hover {
     font-size: 23px;
-    background-color: rgb(184, 192, 204);
-    border-radius: 5px;
-}
-
-.linkedin:hover {
-    font-size: 23px;
-    background-color: rgb(184, 192, 204);
-    border-radius: 5px;
 }
 
 /* end footer */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 30px;
+    }
+    footer h4, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .work {
+        position: relative;
+        justify-content: center;
+        padding-bottom: 0;
+    }
+    
+    .website {
+        flex: 0 60%;
+    }
+
+    .first-website {
+        flex: 10 70%;
+    }
+
+  }
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */   
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+}
