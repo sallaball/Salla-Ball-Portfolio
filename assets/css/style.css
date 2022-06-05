@@ -37,6 +37,10 @@ header h1 {
     font-style: oblique;
 }
 
+.self {
+    align-items: left;
+}
+
 header a {
     text-decoration: none;
 }
