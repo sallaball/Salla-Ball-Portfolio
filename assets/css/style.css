@@ -8,10 +8,20 @@
     padding: 0;
 }
 
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
     font-weight: lighter;
+    background-color: rgb(213, 214, 218);
 }
 
 /* header start */
@@ -97,24 +107,25 @@ header nav ul li:hover {
 
 /* work */
 
-.work {
+.work-box {
     display: flex;
-    margin-top: 0;
+    justify-content: space-between;
     background-color: rgb(213, 214, 218);
 }
 
-
-.work h2 {
-    padding: 50px 20px 50px 200px;
+.work-box h2 {
     font-size: 50px;
     border-right: 3px solid var(--text-color);
     background-color:rgb(213, 214, 218);
     text-shadow: 0 0 10px rgba(17, 37, 37, 0.8);
+    flex: 0 0 20%;
+    text-align: right;
 }
 
 .first-website {
     opacity: 0.8;
     margin-bottom: 10px;
+    flex: 0 0 100%;
 }
 
 .websites h3 {
@@ -126,39 +137,41 @@ header nav ul li:hover {
 .websites h3 p {
     font-size: 13px;
 }
+.websites {
+    flex: 0 0 100%;
+    flex-direction: row;
+}
+.website-name {
+    display: flex;
+    flex:auto;
+}
+
+.placeholder {}
+
 
 .picture1 {
     background-image: url(../images/run-buddy-screenshot.png);
-    background-size: 1000px;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    transition: background-size 0.2s;
     display: flex;
-    width: 1000px;
-    height: 370px;
     text-decoration: none;
     cursor: pointer;
     overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
     border: 3px solid rgba(17, 37, 37, 0.8);
+    flex-wrap: wrap;
+    flex: 0 0 80%;
+    min-height: 400px;
 }
 
 .picture2 {
     background-image: url(../images/horiseon-screenshot.png);
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    transition: background-size 0.2s;
     display: flex;
-    width: 500px;
-    height: 250px;
+    justify-content: space-around;
     text-decoration: none;
     cursor: pointer;
     overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
     border: 3px solid rgba(17, 37, 37, 0.8);
+    flex-wrap: wrap;
+    min-height: 250px;
+    flex: 0 0 30%;
 }
 
 
@@ -167,91 +180,50 @@ header nav ul li:hover {
     opacity: 1;
 }
 
-.picture2:hover, .picture3:hover, .picture4:hover, .picture5:hover, .picture6:hover {
+.pictures:hover, .picture2:hover {
     background-size: 550px;
     opacity: 1;
 }
 
-.picture3 {
+.pictures {
     background-image: url(../images/placeholder-bg.jpg);
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    transition: background-size 0.2s;
     display: flex;
-    width: 500px;
-    height: 250px;
+    justify-content: space-around;
     text-decoration: none;
     cursor: pointer;
     overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
     border: 3px solid rgba(17, 37, 37, 0.8);
+    flex-wrap: wrap;
+    min-height: 250px;
+    flex: 0 0 30%;
 }
 
-.picture4 {
-    background-image: url(../images/placeholder-bg.jpg);
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    transition: background-size 0.2s;
-    display: flex;
-    width: 500px;
-    height: 250px;
-    text-decoration: none;
-    cursor: pointer;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-    border: 3px solid rgba(17, 37, 37, 0.8);
-}
 
-.picture5 {
-    background-image: url(../images/placeholder-bg.jpg);
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    transition: background-size 0.2s;
-    display: flex;
-    width: 500px;
-    height: 250px;
-    text-decoration: none;
-    cursor: pointer;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-    border: 3px solid rgba(17, 37, 37, 0.8);
-}
 
-.picture6 {
-    background-image: url(../images/placeholder-bg.jpg);
-    background-size: 500px;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    transition: background-size 0.2s;
-    display: flex;
-    width: 500px;
-    height: 250px;
-    text-decoration: none;
-    cursor: pointer;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-    border: 3px solid rgba(17, 37, 37, 0.8);
-}
 
 .website {
     display: flex;
     flex-wrap: wrap;
     margin: 10px 10px 10px 0;
+    flex: 0 0 49%;
+    justify-content: space-between;
 }
 
 
-.websites {
+.websites div:first-child {
     margin: 0 15px 15px 15px;
     display: flex;
     flex-wrap: wrap;
     opacity: 0.8;
+    flex: 0 0 70%;
+}
+
+.websites div {
+    margin: 0 15px 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 0.8;
+    flex: 0 0 50%; 
 }
 
 
@@ -294,6 +266,9 @@ footer div {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+    section {
+        flex-direction: column;
+    }
     header {
         padding-bottom: 0;
         justify-content: center;
@@ -317,25 +292,51 @@ footer div {
         width: 100%;
     }
 
-    .work {
-        position: relative;
-        justify-content: center;
-        padding-bottom: 0;
-    }
-    
-    .website {
-        flex: 0 60%;
+    .work-box h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        border-bottom: 2px solid var(--text-color);
+        border-right: none;
     }
 
-    .first-website {
-        flex: 10 70%;
+
+    .picture1 {
+        flex: 0 70%;
     }
+    
 
   }
 
   /* MEDIA QUERY FOR TABLETS AND SMALLER */   
+
+
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
     }
+
+    .work-box {
+        flex: 1 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .pictures {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .website-name p {
+        flex: 100%;
+    }
+
+    .websites {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
 }
+
+
