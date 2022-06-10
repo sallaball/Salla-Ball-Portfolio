@@ -143,10 +143,13 @@ header nav ul li:hover {
 }
 .website-name {
     display: flex;
-    flex:auto;
+    flex: 0 0 49%;
 }
 
-.placeholder {}
+.placeholder {
+    display: flex;
+
+}
 
 
 .picture1 {
