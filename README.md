@@ -1,3 +1,5 @@
+![portoflio-screenshot](https://user-images.githubusercontent.com/104656042/172979076-c35dbf17-49a9-4055-9e4d-24e167f5bcac.png)
+
 # Salla-Ball-Portfolio
 
 ## Purpose
