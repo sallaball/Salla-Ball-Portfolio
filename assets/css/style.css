@@ -319,7 +319,6 @@ footer div {
     }
 
     .work-box {
-        flex: 1 100%;
         text-align: center;
         justify-content: center;
     }
@@ -330,6 +329,17 @@ footer div {
         margin-top: 15px;
         margin-bottom: 15px;
     }
+    .website {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .first-website {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
 
     .website-name p {
         flex: 100%;
@@ -339,6 +349,16 @@ footer div {
         flex: 2 100%;
         text-align: center;
         justify-content: center;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */ 
+@media scree and (max-width: 575px) {
+    
+
+    .contact-me {
+        text-align: center;
+        flex: 0 100;
     }
 }
 
